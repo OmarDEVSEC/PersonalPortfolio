@@ -11,16 +11,32 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <div>
-          <h1>The Beginning of a great start is to completely engulf oneself into an idea or project</h1>
-          <p>Great Porfolios Start off empty and terrible!</p>
+        <div class="header-center">
+          <a class="Projects" href="Projects">Projects</a>
+          <a href="About">About</a>
+          <a href="Contact">Contact</a>
         </div>
 
       </head>
     <body>
-     
-        <h1>I'm a CyberSecurity Administrator</h1>
+     <Canvas id="canvas"></Canvas> <!--for the graphics of the page and dynamics-->
+        <div class="container">
+        <h1>I'm <span class="auto-type"></span></h1> 
         </div>
-        <script src="" async defer></script>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!--the typing animation JS code, adjust speed and words displayed-->
+
+    
+        <script> 
+          var typed = new Typed(".auto-type",{
+            strings: ["Omar","a CyberSecurity Administrator","a Programmer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+          })
+          
+        </script>
+        <script src="/back.js"></script>
     </body>
 </html>
