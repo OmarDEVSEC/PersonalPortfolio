@@ -10,20 +10,35 @@ h1{
     font-weight: 700;
 }
 
-.header-center{
+.header{
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
     overflow: hidden;
-
+    background-color:  #4e5d72;
 }
 a{
-padding:13px;
+padding: 14px;
+border-radius: 50px;
 }
 .Projects{
-padding: 40;
+padding: 10px;
+border-radius: 50px;
 width: 100;
+background-color: beige;
+}
+
+.About{
+padding:10px;
+background-color: beige;
+border-radius:50px;
+width:100;
+}
+.Contact{
+    padding: 10px;
+    background-color: beige;
+
 }
 .container{
     width: 100%;
