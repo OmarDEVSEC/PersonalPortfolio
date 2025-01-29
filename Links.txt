@@ -1,0 +1,10 @@
+Nav Logo
+- Omar
+
+Links:
+About Me
+Projects
+Contacts
+
+Adding comments to CSS 
+ /*=====Colors======*/

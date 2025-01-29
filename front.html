@@ -12,14 +12,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         
+        <!--Adding Remixcons link for portfolio design-->>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
       </head>
+
     <body>
+    
       <!--Begining of Navigation-->
-      <nav class="header">
-        <a class="Projects" href="Projects">Projects</a>
-        <a class = "About" href="About">About</a>
-        <a class = "Contact" href="Contact">Contact</a>
+      <header class="header" id ="header">   
+        <nav class="navcontainer">
+          <a href="#" class = "navlogo">Logo</a>
+          <div class ="nav__menu" id="nav-menu">
+           <ul class = nav_list>
+              <li class = "nav__item">
+                <a href="#" class="nav__link">
+                  <i class="ri-arrow-right-up-line"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+
+              <li class = "nav__item">
+                <a href="#" class="nav__link">
+                  <i class="ri-arrow-right-up-line"></i>
+                  <span>About</span>
+                </a>
+              </li>
+
+              <li class = "nav__item">
+                <a href="#" class="nav__link">
+                  <i class="ri-arrow-right-up-line"></i>
+                  <span>Projects</span>
+                </a>
+              </li>
+
+              <li class = "nav__item">
+                <a href="#" class="nav__link">
+                  <i class="ri-arrow-right-up-line"></i>
+                  <span>Contact</span>
+                </a>
+              </li>
+           </ul> 
+           <!--Close nav button-->>
+           <div class="nav__close" id ="nav-close">
+            <i class="ri-close-large-line"></i>
+           </div>
+           <div class="nav__social">
+            <a href="https://x.com/" target = "_blank" class="nav__social-link">
+              <i class="ri-twitter-x-line"></i>
+            </a>
+
+            <a href="https://github.com/" target = "_blank" class="nav__social-link">
+              <i class="ri-github-fill"></i>
+            </a>
+
+            <a href="https://linkedin.com/" target = "_blank" class="nav__social-link">
+              <i class="ri-linkedin-box-fill"></i>
+            </a>
+          </div>
+        </div>
+<!--Toggle button-->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-fill"></i>
+        </div>
       </nav>
+    </header>
       <!--End of Navigation-->
 
         <div class="container">
@@ -30,10 +87,7 @@
         <!--the typing animation JS code, adjust speed and words displayed-->
 
     
-        <script> 
-          
-          
-        </script>
+        
         <script src="/back.js"></script>
     </body>
 </html>
