@@ -91,7 +91,7 @@ h1{
 @media screen and (max-width: 1150px){
     .nav__menu{
         position:fixed;
-        left: 0;
+        left: -100%;
         top: 0;
         background-color:var(--black-color) ;
         width: 100%;
@@ -101,6 +101,25 @@ h1{
         flex-direction: column;
         justify-content: space-between;
         transition: left .4s;
+    }
+
+    .nav__item{
+       transform: translateX(-150px); 
+       visibility: hidden;
+       transition: transform .4s ease-out, visibility .4s;
+    }
+
+    .nav__item:nth-child(1){
+        transition-delay: .1s;
+    }
+    .nav__item:nth-child(2){
+        transition-delay: .2s;
+    }
+    .nav__item:nth-child(3){
+        transition-delay: .3s;
+    }
+    .nav__item:nth-child(4){
+        transition-delay: .4s;
     }
 }
 
@@ -146,20 +165,99 @@ display: flex;
     height:2px;
     background-color: var(--white-color);
     transition: width .4s ease-out;
-
 }
+
+
+
 
 /*Animation link on hover*/
 .nav__link:hover span{
  margin-left: 2.5rem;
  
 }
+
+.nav__link:hover i{
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav__link:hover span::after{
+    width:100%;
+
+}
 /* Sibling fade animation*/
 
+.nav_list:has(.nav__link:hover).nav__link:not(:hover){
+opacity: .4;
+}
+
+.nav__close{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+.nav__social{
+    column-gap: 1rem;
+}
+
+.nav__social-link{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    transition: transform .4s;
+}
+
+.nav__social-link:hover{
+    transform: translateY(-.25rem);
+}
 /* show menu*/
 
-/* Animation link when displaying menu*/
+.show-menu{
+    left: 0;
+}
 
+/* Animation link when displaying menu*/
+.show-menu .nav__item{
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/*===BreakPoints===*/
+
+/*===For Large Devices===*/
+@media screen and (min-width: 1150px){
+    .container{
+        margin-inline: auto;
+    }
+
+    .navcontainer{
+        height: calc(var(--header-height) + 2rem);;
+    }
+    .nav__toggle,
+    .nav__close{
+        display:none;
+    }
+
+    .nav__link{
+        font-size: var(--normal-font-size)
+    }
+    .nav__link i{
+        font-size: 1.5rem;
+    }
+    .nav_list{
+        flex-direction: row;
+        column-gap: 3.5rem;
+    }
+    .nav__menu{
+        display: flex;
+        align-items: center;
+        column-gap: 4.5rem;
+    }
+    .nav__social{
+        padding: 3.5rem;
+    }
+
+}
 
 .container{
     width: 100%;
