@@ -100,7 +100,28 @@ h1{
     color: var(--accent-color);
     font-weight: var(--font-medium);
     letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    height: var(--header-height);
+    padding: 0;
 }
+.navlogo-img {
+    height: 2.2rem;              /* Slightly smaller for better alignment */
+    width: 2.2rem;               /* Keep it square for a perfect circle */
+    object-fit: cover;           /* Ensures the image fills the area */
+    display: block;
+    filter: drop-shadow(0 0 4px var(--accent-color)); /* Softer glow */
+    background: transparent;
+    border-radius: 50%;          /* Keeps it circular */
+    margin-right: 0.75rem;       /* Space between logo and nav links if needed */
+    transition: filter 0.3s;
+    vertical-align: middle;
+}
+
+.navlogo-img:hover {
+    filter: drop-shadow(0 0 16px var(--highlight-color));
+}
+
 .nav__close,
 .nav__toggle{
     color: var(--accent-color);
