@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Omar's Personal Portfolio</title>
+        <title>OmarDevSec</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -28,28 +28,28 @@
           <div class ="nav__menu" id="nav-menu">
            <ul class = nav_list>
               <li class = "nav__item">
-                <a href="#" class="nav__link">
+                <a href="#home" class="nav__link">
                   <i class="ri-arrow-right-up-line"></i>
                   <span>Home</span>
                 </a>
               </li>
 
               <li class = "nav__item">
-                <a href="#" class="nav__link">
+                <a href="#blog"class="nav__link">
                   <i class="ri-arrow-right-up-line"></i>
-                  <span>About</span>
+                  <span>Blog</span>
                 </a>
               </li>
 
               <li class = "nav__item">
-                <a href="#" class="nav__link">
+                <a href="#projects" class="nav__link">
                   <i class="ri-arrow-right-up-line"></i>
                   <span>Projects</span>
                 </a>
               </li>
 
               <li class = "nav__item">
-                <a href="#" class="nav__link">
+                <a href="#contact" class="nav__link">
                   <i class="ri-arrow-right-up-line"></i>
                   <span>Contact</span>
                 </a>
@@ -81,9 +81,23 @@
     </header>
       <!--End of Navigation-->
 
-        <div class="container">
-        <h1>Hi! I'm <span class="auto-type"></span></h1> 
-        </div>
+        <section class="container" id="home">
+          <h1>Hi! I'm <span class="auto-type"></span></h1> 
+        </section>
+        
+        <section class="section" id="blog">
+          <h2>Blog</h2>
+          <p>Welcome to my blog! Here I share insights on cybersecurity, programming, and tech trends.</p>
+        </section>
+        
+        <section class="section" id="projects">
+          <h2>Projects</h2>
+          <p>Check out some of my featured projects below.</p>
+        </section>
+        
+        <footer class="footer" id="footer">
+          <p>&copy; 2025 OmarDevSec. All rights reserved.</p>
+        </footer>
 
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <!--the typing animation JS code, adjust speed and words displayed-->
@@ -91,5 +105,6 @@
     
         
         <script src="/back.js"></script>
+        <script src="scroll.js"></script>
     </body>
 </html>

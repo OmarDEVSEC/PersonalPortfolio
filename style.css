@@ -351,3 +351,35 @@ opacity: .4;
 .nav__link:hover {
     color: var(--highlight-color); /* Optional: subtle shift on hover */
 }
+
+.section {
+    width: 100%;
+    min-height: 80vh;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 32px rgba(0,255,231,0.04);
+    margin: 3rem 0;
+    padding: 3rem 1rem;
+}
+
+.section h2 {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer {
+    width: 100%;
+    background: var(--black-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
