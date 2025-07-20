@@ -1,0 +1,93 @@
+/* DHH-inspired blog style with your portfolio's cyber color scheme */
+
+:root {
+    --white-color: #f4f8fb;
+    --black-color: #101522;
+    --primary-color: #1f2937;
+    --accent-color: #00ffe7;
+    --secondary-color: #232b3a;
+    --text-color: #e0e6ed;
+    --highlight-color: #00b8d9;
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    font-size: 1.18rem;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+.section#about-me {
+    max-width: 700px;
+    margin: 3rem auto 2rem auto;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    background: var(--secondary-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 16px rgba(0,255,231,0.08);
+    border: 1px solid var(--accent-color);
+}
+
+h2, h3 {
+    font-family: "Montserrat Alternates", Arial, sans-serif;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01em;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--highlight-color);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--highlight-color);
+    margin-bottom: 0.7rem;
+}
+
+ul {
+    margin: 0 0 1.5rem 1.5rem;
+    padding: 0;
+    list-style: disc;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin: 1.5rem 0;
+    color: var(--text-color);
+}
+
+strong {
+    color: var(--accent-color);
+}
+
+a {
+    color: var(--highlight-color);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+@media (max-width: 800px) {
+    .section#about-me {
+        max-width: 98vw;
+        padding: 1.2rem 0.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}

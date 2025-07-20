@@ -36,7 +36,7 @@ const blogs = [
     title: "About Me",
     date: "July 2025",
     desc: "Learn more about Omar! A brief introduction to my background and interests.",
-    link: "blog1.html"
+    link: "blogs/aboutme.html"
   },
   {
     title: "Top 5 Programming Languages for Cybersecurity",
