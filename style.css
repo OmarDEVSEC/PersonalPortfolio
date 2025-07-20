@@ -115,7 +115,6 @@ h1{
     border-radius: 50%;          /* Keeps it circular */
     margin-right: 0.75rem;       /* Space between logo and nav links if needed */
     transition: filter 0.3s;
-    vertical-align: middle;
 }
 
 .navlogo-img:hover {
@@ -382,4 +381,67 @@ opacity: .4;
     font-size: 1rem;
     letter-spacing: 1px;
     margin-top: 2rem;
+}
+
+.blog-previews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.blog-card {
+    background: var(--primary-color);
+    border-radius: 1rem;
+    box-shadow: 0 2px 16px rgba(0,255,231,0.08);
+    padding: 2rem 1.5rem;
+    max-width: 340px;
+    min-width: 260px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border: 1px solid var(--accent-color);
+}
+
+.blog-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,255,231,0.18);
+    border-color: var(--highlight-color);
+}
+
+.blog-card-title {
+    color: var(--accent-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.blog-card-date {
+    color: var(--highlight-color);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.blog-card-desc {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.blog-card-link {
+    color: var(--highlight-color);
+    font-weight: 500;
+    text-decoration: underline;
+    align-self: flex-end;
+    transition: color 0.2s;
+}
+
+.blog-card-link:hover {
+    color: var(--accent-color);
 }
