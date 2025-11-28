@@ -39,13 +39,13 @@ const blogs = [
     link: "blogs/aboutme.html"
   },
   {
-    title: "Top 5 Programming Languages for Cybersecurity",
-    date: "June 2025",
-    desc: "Explore the most useful programming languages for aspiring cybersecurity professionals.",
-    link: "blog2.html"
+    title: "AZ-500 How To Pass and Challenges Faced",
+    date: "July 2025",
+    desc: "A guide on passing the AZ-500 and Becoming an Azure Security Wizard.",
+    link: "blogs/Az500.html"
   },
   {
-    title: "Incident Response: What You Need to Know",
+    title: "Study + Browser Extension: Best way to study and Pass Certtifications.",
     date: "May 2025",
     desc: "A quick guide to incident response and why every organization needs a plan.",
     link: "blog3.html"
