@@ -45,7 +45,7 @@ const blogs = [
     link: "blogs/Az500.html"
   },
   {
-    title: "Study + Browser Extension: Best way to study and Pass Certtifications.",
+    title: "ImpelBrowser: Secure Browsing and AI Privacy",
     date: "May 2025",
     desc: "A quick guide to incident response and why every organization needs a plan.",
     link: "blog3.html"
