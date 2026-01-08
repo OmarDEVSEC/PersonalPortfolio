@@ -342,7 +342,7 @@ opacity: .4;
     box-shadow: 0 4px 32px rgba(0,255,231,0.04);
 }
 .container h1{
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 600;
     color: var(--accent-color);
     text-shadow: 0 2px 16px rgba(0,255,231,0.12);
@@ -368,6 +368,11 @@ opacity: .4;
 
  #blog{
     height:60vh;
+}
+
+#blog-header{
+    font-size:60px;
+    font-weight:600;
 }
 
 .section h2 {
