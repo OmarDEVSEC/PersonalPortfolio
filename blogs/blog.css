@@ -78,6 +78,12 @@ a {
     transition: color 0.2s;
 }
 
+
+#Az-header{
+    color: var(--accent-color);
+    text-align: center;
+}
+
 a:hover {
     color: var(--accent-color);
 }
