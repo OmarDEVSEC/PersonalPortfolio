@@ -84,6 +84,11 @@ a {
     text-align: center;
 }
 
+#Az-Intro{
+    display:flex;
+    justify-content:center;
+}
+
 a:hover {
     color: var(--accent-color);
 }
