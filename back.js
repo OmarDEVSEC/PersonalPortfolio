@@ -6,51 +6,75 @@ const typed = new Typed(".auto-type",{
     backSpeed: 100,
     loop: true
   })
-  
 
-  /*=====SHOW MENU======*/
-
-  const navMenu = document.getElementById('nav-menu'),
-        navToggle = document.getElementById('nav-toggle'),
-        navClose = document.getElementById('nav-close')
-
-  /*=====Menu show======*/
-  if(navToggle){
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
-    })
-  }
-
-  /*=====Menu Hidden======*/
-  if(navClose){
-      navClose.addEventListener('click', () =>{
-        navMenu.classList.remove('show-menu')
-      })
-  }
-
-  //blog section JS code, blog preview cards
-
-// Blog preview cards functionality
-const blogs = [
+// Projects data
+const projects = [
   {
-    title: "About Me",
-    date: "July 2025",
-    desc: "Learn more about Omar! A brief introduction to my background and interests.",
-    link: "blogs/aboutme.html"
+    title: "Project 1",
+    desc: "A brief description of your first project and its key features.",
+    languages: ["JavaScript", "React", "Node.js"],
+    frameworks: ["Express", "MongoDB"],
+    link: "#"
   },
   {
-    title: "AZ-500 How To Pass and Challenges Faced",
-    date: "July 2025",
-    desc: "A guide on passing the AZ-500 and Becoming an Azure Security Wizard.",
-    link: "blogs/Az500.html"
+    title: "Project 2",
+    desc: "Description of your second project highlighting technologies used.",
+    languages: ["Python", "Azure"],
+    frameworks: ["Django", "REST API"],
+    link: "#"
   },
   {
-    title: "ImpelBrowser: Secure Browsing and AI Privacy",
-    date: "May 2025",
-    desc: "A quick guide to incident response and why every organization needs a plan.",
-    link: "blog3.html"
+    title: "Project 3",
+    desc: "Overview of your third project and the problem it solves.",
+    languages: ["Python", "Linux"],
+    frameworks: ["Automation", "Security"],
+    link: "#"
   }
 ];
+
+// Populate projects
+function populateProjects() {
+  const container = document.getElementById('projects-container');
+  
+  if (!container) return;
+  
+  projects.forEach(project => {
+    const projectCard = document.createElement('div');
+    projectCard.className = 'project-card';
+    
+    const languagesTags = project.languages.map(lang => 
+      `<span class="tag">${lang}</span>`
+    ).join('');
+    
+    const frameworksTags = project.frameworks.map(fw => 
+      `<span class="tag">${fw}</span>`
+    ).join('');
+    
+    projectCard.innerHTML = `
+      <h3 class="project-title">$ ${project.title}</h3>
+      <p class="project-desc">${project.desc}</p>
+      <div class="project-tags">
+        <strong style="color: var(--accent-secondary); margin-right: 0.5rem;">Languages:</strong>
+        ${languagesTags}
+      </div>
+      <div class="project-tags">
+        <strong style="color: var(--accent-secondary); margin-right: 0.5rem;">Frameworks:</strong>
+        ${frameworksTags}
+      </div>
+      <div class="project-links">
+        <a href="${project.link}" class="project-link">View</a>
+        <a href="${project.link}" class="project-link">Code</a>
+      </div>
+    `;
+    
+    container.appendChild(projectCard);
+  });
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', populateProjects);
+    link: "blog3.html"
+
 
 function renderBlogPreviews() {
   const container = document.getElementById('blog-previews');

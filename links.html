@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Links - OmarDevSec</title>
+    <meta name="description" content="Omar's Blog Posts and External Links">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="prompt">omar@devsec:~$</div>
+                <h1 class="title">$ ls /blogs</h1>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Blog Posts Section -->
+            <section class="section">
+                <div class="command">$ ./cat blogs/*</div>
+                <div class="output" id="blogs-container">
+                    <!-- Blog posts will be injected here by JavaScript -->
+                </div>
+            </section>
+
+            <!-- External Links Section -->
+            <section class="section">
+                <div class="command">$ ./show_socials.sh</div>
+                <div class="output">
+                    <div class="links-grid" id="socials-container">
+                        <!-- Social links will be injected here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Back Link -->
+            <section class="section">
+                <div class="output">
+                    <p><span class="prompt-symbol">></span> Want to go back?</p>
+                    <p><a href="index.html" class="project-link">[return to home]</a></p>
+                    <p class="footer-prompt">omar@devsec:~$ exit</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="links.js"></script>
+</body>
+</html>
