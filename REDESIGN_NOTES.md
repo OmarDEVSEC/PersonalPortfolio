@@ -2,7 +2,7 @@
 
 ## Changes Made
 
-Your portfolio has been completely redesigned with a **terminal/CLI aesthetic** similar to alexwalker.app, featuring a modern dark theme with green/cyan accents.
+portfolio has been completely redesigned with a **terminal/CLI aesthetic** similar to alexwalker.app, featuring a modern dark theme with green/cyan accents.
 
 ### Files Updated/Created:
 
@@ -116,4 +116,4 @@ const socials = [
 4. Add more blog entries as needed
 5. Update your email in the socials section
 
-Enjoy your new terminal-inspired portfolio!
+
