@@ -1,23 +1,40 @@
 /* DHH-inspired blog style with your portfolio's cyber color scheme */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
 
 :root {
-    --white-color: #f4f8fb;
-    --black-color: #101522;
-    --primary-color: #1f2937;
-    --accent-color: #00ffe7;
-    --secondary-color: #232b3a;
-    --text-color: #e0e6ed;
-    --highlight-color: #00b8d9;
+    /* Colors */
+    --bg-primary: #0a0e27;
+    --bg-secondary: #1a1f3a;
+    --accent-primary: #00ff88;
+    --accent-secondary: #00d4ff;
+    --text-primary: #e0e6ed;
+    --text-secondary: #a0a6ad;
+    --border-color: #2a2f4a;
+
+    /* Typography */
+    --font-mono: 'Fira Code', monospace;
+    --font-size-small: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-large: 1.25rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background: var(--primary-color);
-    color: var(--text-color);
-    font-family: "Georgia", "Times New Roman", Times, serif;
-    font-size: 1.18rem;
-    line-height: 1.7;
-    margin: 0;
-    padding: 0;
+    font-family: var(--font-mono);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    font-size: var(--font-size-base);
+    overflow-x: hidden;
 }
 
 .section#about-me {
