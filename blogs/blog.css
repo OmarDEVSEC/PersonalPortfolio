@@ -10,6 +10,12 @@
     --text-primary: #e0e6ed;
     --text-secondary: #a0a6ad;
     --border-color: #2a2f4a;
+    
+    /* Aliases for consistency */
+    --secondary-color: #1a1f3a;
+    --accent-color: #00ff88;
+    --text-color: #e0e6ed;
+    --highlight-color: #00d4ff;
 
     /* Typography */
     --font-mono: 'Fira Code', monospace;
@@ -41,12 +47,21 @@ body {
     max-width: 700px;
     margin: 3rem auto 2rem auto;
     padding: 2.5rem 1.5rem 2rem 1.5rem;
-    background: var(--secondary-color);
+    background: var(--bg-secondary);
     border-radius: 0.5rem;
     box-shadow: 0 2px 16px rgba(0,255,231,0.08);
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--accent-primary);
 }
 
+.section#az-500 {
+    max-width: 700px;
+    margin: 3rem auto 2rem auto;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    background: var(--bg-secondary);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 16px rgba(0,255,231,0.08);
+    border: 1px solid var(--accent-primary);
+}
 h2, h3 {
     font-family: "Montserrat Alternates", Arial, sans-serif;
     font-weight: 600;
@@ -60,13 +75,14 @@ h2 {
     font-size: 2.2rem;
     margin-top: 0;
     margin-bottom: 2rem;
-    border-bottom: 1px solid var(--highlight-color);
+    border-bottom: 1px solid var(--accent-secondary);
     padding-bottom: 0.5rem;
+    color: var(--accent-primary);
 }
 
 h3 {
     font-size: 1.25rem;
-    color: var(--highlight-color);
+    color: var(--accent-primary);
     margin-bottom: 0.7rem;
 }
 
@@ -82,32 +98,21 @@ li {
 
 p {
     margin: 1.5rem 0;
-    color: var(--text-color);
+    color: var(--text-primary);
 }
 
 strong {
-    color: var(--accent-color);
+    color: var(--accent-primary);
 }
 
 a {
-    color: var(--highlight-color);
+    color: var(--accent-secondary);
     text-decoration: underline;
     transition: color 0.2s;
 }
 
-
-#Az-header{
-    color: var(--accent-color);
-    text-align: center;
-}
-
-#Az-Intro{
-    display:flex;
-    justify-content:center;
-}
-
 a:hover {
-    color: var(--accent-color);
+    color: var(--accent-primary);
 }
 
 @media (max-width: 800px) {
