@@ -73,8 +73,8 @@ function populateProjects() {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', populateProjects);
-    link: "blog3.html"
 
+const blogs = [];
 
 function renderBlogPreviews() {
   const container = document.getElementById('blog-previews');
