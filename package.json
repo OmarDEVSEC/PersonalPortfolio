@@ -1,0 +1,12 @@
+{
+  "name": "personal-portfolio-backend",
+  "version": "1.0.0",
+  "description": "Backend for the PersonalPortfolio site that logs access details and tracks page views.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.4"
+  }
+}
