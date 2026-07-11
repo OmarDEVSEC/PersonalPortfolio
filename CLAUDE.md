@@ -30,7 +30,7 @@ A static personal portfolio site (terminal/CLI-themed) for Omar, a cybersecurity
 
 ## Planned frontend redesign (ON HOLD)
 
-A full redesign is planned but **blocked until the user supplies real content** (resume PDF, work experience details, real project data, real email/Twitter handle). Do not start implementation until the user explicitly resumes this work and provides that content.
+A full redesign is planned but **blocked until the user supplies real content(Very soon)** (resume PDF, work experience details, real project data, real email/Twitter handle). Do not start implementation until the user explicitly resumes this work and provides that content.
 
 Decisions already made for when this resumes:
 - **Visual direction:** polished terminal/CLI theme — keep the current dark, monospace, command-prompt aesthetic but tighten hierarchy/spacing so it reads as more deliberate and professional (not a from-scratch style change).
@@ -47,7 +47,7 @@ Still outstanding before implementation can start:
 - Resume PDF file
 - Real email and Twitter/X handle (or confirmation to drop Twitter)
 - Confirmation that the certs list in `blogs/aboutme.html` is current
-
+- Azure Static Web Apps: This will be utilized to deploy the site, for free and reliable web hosting.
 ## Notes specific to this repo
 
 - No `.gitignore` exists — `node_modules` has been committed to the repo in the past. Don't assume `node_modules` is ignored; be careful about accidentally re-committing large dependency trees.
