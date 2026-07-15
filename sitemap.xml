@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: replace https://omardevsec.example.com with the real deployed domain -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://omardevsec.example.com/</loc>
+  </url>
+  <url>
+    <loc>https://omardevsec.example.com/links.html</loc>
+  </url>
+  <url>
+    <loc>https://omardevsec.example.com/blogs/aboutme.html</loc>
+  </url>
+  <url>
+    <loc>https://omardevsec.example.com/blogs/Az500.html</loc>
+  </url>
+</urlset>
