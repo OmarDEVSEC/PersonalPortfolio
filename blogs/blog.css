@@ -63,7 +63,7 @@ body {
     border: 1px solid var(--accent-primary);
 }
 h2, h3 {
-    font-family: "Montserrat Alternates", Arial, sans-serif;
+    font-family: var(--font-mono);
     font-weight: 600;
     color: var(--accent-color);
     margin-top: 2.5rem;
