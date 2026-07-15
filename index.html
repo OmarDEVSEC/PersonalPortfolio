@@ -6,6 +6,15 @@
     <title>OmarDevSec</title>
     <meta name="description" content="Omar | Cybersecurity Admin & Programmer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- og:image not set yet — TODO in CLAUDE.md -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Omar | Cybersecurity Engineer & Programmer">
+    <meta property="og:description" content="Portfolio of Omar — Cybersecurity Engineer & Programmer specializing in Azure security, network administration, and secure application development.">
+    <meta property="og:url" content="https://omardevsec.example.com/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Omar | Cybersecurity Engineer & Programmer">
+    <meta name="twitter:description" content="Portfolio of Omar — Cybersecurity Engineer & Programmer specializing in Azure security, network administration, and secure application development.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 </head>
@@ -16,6 +25,15 @@
             <div class="header-content">
                 <div class="prompt">omar@devsec:~$</div>
                 <h1 class="title">portfolio</h1>
+                <div class="header-cta">
+                    <!-- TODO: drop resume.pdf in repo root -->
+                    <a href="resume.pdf" class="cta-button cta-primary" download>
+                        <i class="ri-download-line"></i> Resume
+                    </a>
+                    <a href="mailto:REPLACE_WITH_REAL_EMAIL@example.com" class="cta-button">
+                        <i class="ri-mail-line"></i> Contact
+                    </a>
+                </div>
             </div>
         </header>
 
@@ -25,7 +43,7 @@
             <section class="section">
                 <div class="command">$ whoami</div>
                 <div class="output">
-                    <p><span class="prompt-symbol">></span> Name: Omar | Cybersecurity Engineer & Programmer</p>
+                    <p><span class="prompt-symbol">></span> Name: <span class="auto-type"></span></p>
                     <p><span class="prompt-symbol">></span> Interests: Azure | Security | Python | Linux | AI & Machine Learning</p>
                 </div>
             </section>
@@ -37,6 +55,22 @@
                     <p><span class="prompt-symbol">></span> I'm a cybersecurity engineer and AI/Machine learning enthusiast, passionate about building secure, scalable AI solutions.</p>
                     <p><span class="prompt-symbol">></span> I specialize in Azure cloud security, network administration, and developing secure and compliant applications.</p>
                     <p><span class="prompt-symbol">></span> Always learning, always exploring new technologies in the security and development space.</p>
+                </div>
+            </section>
+
+            <!-- Work Experience Section -->
+            <section class="section">
+                <div class="command">$ cat experience.log</div>
+                <div class="output" id="experience-container">
+                    <!-- Work experience will be injected here by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Skills & Certifications Section -->
+            <section class="section">
+                <div class="command">$ cat certifications.json</div>
+                <div class="output" id="certifications-container">
+                    <!-- Certifications/education/skills will be injected here by JavaScript -->
                 </div>
             </section>
 
@@ -65,10 +99,7 @@
                             <i class="ri-linkedin-box-fill"></i>
                             <span>LinkedIn</span>
                         </a>
-                        <a href="https://x.com/" target="_blank" class="link-item">
-                            <i class="ri-twitter-x-line"></i>
-                            <span>Twitter</span>
-                        </a>
+                        <!-- Twitter/X link removed until a real handle is supplied — see CLAUDE.md TODO -->
                     </div>
                 </div>
             </section>
