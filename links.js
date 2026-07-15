@@ -11,16 +11,13 @@ const blogs = [
     date: "July 2025",
     desc: "A guide on passing the AZ-500 and Becoming an Azure Security Wizard.",
     link: "blogs/Az500.html"
-  },
-  {
-    title: "ImpelBrowser: Secure Browsing and AI Privacy",
-    date: "May 2025",
-    desc: "A quick guide to incident response and why every organization needs a plan.",
-    link: "#"
   }
+  // "ImpelBrowser" post removed — was a dead "#" link. Re-add with a real
+  // link once that post is written.
 ];
 
 // Social links data
+// TODO: replace mailto sentinel with a real email address before shipping.
 const socials = [
   {
     icon: "ri-github-fill",
@@ -32,15 +29,13 @@ const socials = [
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/fullstackomar/"
   },
-  {
-    icon: "ri-twitter-x-line",
-    name: "Twitter",
-    url: "https://x.com/"
-  },
+  // Twitter/X entry disabled until a real handle exists — a link to a
+  // bare, handle-less profile looks worse than no link at all. Re-add:
+  // { icon: "ri-twitter-x-line", name: "Twitter", url: "https://x.com/<handle>" }
   {
     icon: "ri-mail-line",
     name: "Email",
-    url: "mailto:your-email@example.com"
+    url: "mailto:REPLACE_WITH_REAL_EMAIL@example.com"
   }
 ];
 
