@@ -28,28 +28,24 @@ A static personal portfolio site (terminal/CLI-themed) for Omar, a cybersecurity
 - After the above routes/middleware, `express.static(__dirname)` serves the whole project root directly — so any file placed in the repo root or `blogs/` becomes web-accessible.
 - Unmatched routes get a plain-text 404.
 
-## Planned frontend redesign (ON HOLD)
+## Recruiter-focused redesign — structure done, content outstanding
 
-A full redesign is planned but **blocked until the user supplies real content(Very soon)** (resume PDF, work experience details, real project data, real email/Twitter handle). Do not start implementation until the user explicitly resumes this work and provides that content.
+The structural revamp (recruiter-readability pass) has been implemented: work experience section, skills/certifications section (surfaced from `blogs/aboutme.html` onto the homepage), header resume/contact CTAs, fixed project card links, removed dead code (unused typed.js target, orphaned blog-preview render path), removed broken Twitter/email links, and added favicon/Open Graph/robots.txt/sitemap.xml. Visual direction stayed polished terminal/CLI (dark, monospace, command-prompt aesthetic), vanilla HTML/CSS/JS, no build step — per the original decision.
 
-Decisions already made for when this resumes:
-- **Visual direction:** polished terminal/CLI theme — keep the current dark, monospace, command-prompt aesthetic but tighten hierarchy/spacing so it reads as more deliberate and professional (not a from-scratch style change).
-- **Tech stack:** stay vanilla HTML/CSS/JS, no build step, no framework — restyle in place.
-- **New content sections to add:**
-  - Work experience section (jobs/roles, dates, responsibilities)
-  - Downloadable resume/CV (PDF link/button)
-  - Skills/certifications section — surface certs already documented in `blogs/aboutme.html` (AZ-500, CCNA in progress, SC-900, CompTIA A+/Security+/Network+)
-- Goal is recruiter-readability: make projects and work experience easy to scan, not just a portfolio/blog feel.
+**Outstanding content — grep for these before treating the site as launch-ready:**
+- `resume.pdf` does not exist yet. The header "Resume" button in `index.html` links to it and will 404 until the file is dropped in the repo root.
+- `experience` array in `back.js` has one placeholder entry (`[ADD REAL ROLE]` / `[ADD REAL COMPANY]` / `[ADD REAL DATES]`) — replace with real work history.
+- `projects` array in `back.js` still has 3 placeholder entries (`[ADD REAL PROJECT] Project 1/2/3`, empty `demoUrl`/`repoUrl`) — replace with real project data. `demoUrl` can stay empty if a project has no live demo (the "View" link only renders when set); `repoUrl` should point to the GitHub repo.
+- Email is a sentinel (`REPLACE_WITH_REAL_EMAIL@example.com`) in both `index.html` (header CTA + mailto) and `links.js` (`socials` array) — replace with a real address.
+- Twitter/X is disabled (commented out) in both `index.html` and `links.js` until a real handle exists — re-enable once there is one, or leave it dropped permanently.
+- `og:url` meta tags in `index.html`/`links.html` and all `<loc>` entries in `sitemap.xml` use a placeholder domain (`https://omardevsec.example.com`) — replace with the real deployed domain once hosted.
+- `og:image` is not set — add one for richer LinkedIn/Slack link previews (optional).
+- Azure Static Web Apps: still the intended hosting target for deployment; not yet set up.
 
-Still outstanding before implementation can start:
-- Real project details (title, description, languages/frameworks, link) to replace `Project 1/2/3` placeholders in `back.js`
-- Real work experience entries
-- Resume PDF file
-- Real email and Twitter/X handle (or confirmation to drop Twitter)
-- Confirmation that the certs list in `blogs/aboutme.html` is current
-- Azure Static Web Apps: This will be utilized to deploy the site, for free and reliable web hosting.
+The certifications/education list is treated as real/current (sourced directly from `blogs/aboutme.html`: AZ-500, CCNA in progress, SC-900, CompTIA A+/Security+/Network+, BS Cybersecurity @ WGU, AS Programming @ Seattle Central) and is now duplicated onto the homepage in `back.js`'s `certifications`/`education`/`coreSkills` data — keep both in sync if either changes.
+
 ## Notes specific to this repo
 
 - No `.gitignore` exists — `node_modules` has been committed to the repo in the past. Don't assume `node_modules` is ignored; be careful about accidentally re-committing large dependency trees.
-- `Links.txt` and `toDoList.md` in the repo root are informal personal notes (outstanding items like unifying blog CSS with the main design, and hosting plans), not authoritative specs.
-- Several placeholder values still exist in `back.js`/`links.js` (e.g. `Project 1/2/3` with `link: "#"`, `mailto:your-email@example.com`) — treat these as unfilled content, not bugs, unless asked to update them.
+- `Links.txt` and `toDoList.md` in the repo root are informal personal notes, not authoritative specs. The blog-CSS-unification item in `toDoList.md` is now done (`blogs/blog.css` uses `var(--font-mono)` like the main site); hosting is still outstanding.
+- Placeholder values still exist in `back.js`/`links.js`/`index.html` — see the outstanding-content checklist above (`[ADD REAL ...]` markers and `REPLACE_WITH_REAL_EMAIL@example.com`) — treat these as unfilled content, not bugs, unless asked to update them.
