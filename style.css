@@ -317,11 +317,6 @@ a:hover {
     font-weight: 700;
 }
 
-.experience-dates {
-    color: var(--accent-secondary);
-    font-size: var(--font-size-small);
-}
-
 .experience-company {
     color: var(--text-secondary);
     font-size: var(--font-size-small);
