@@ -1,7 +1,7 @@
 //the typing animation JS code, adjust speed and words displayed-->
 
 const typed = new Typed(".auto-type",{
-    strings: ["Omar","a Cybersecurity Admin","a Programmer"],
+    strings: ["a Cybersecurity Admin","a Programmer"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
@@ -81,16 +81,24 @@ function populateProjects() {
   });
 }
 
-// Work experience data
-// TODO: replace with real roles (role, company, dates, bullets[])
+// Work experience data (sourced from resume.pdf)
+// Consolidated into a single Security Engineer entry — merges the
+// strongest, most relevant bullets across all roles held at Boeing
+// Employee Credit Union (Intern -> Contractor -> Administrator -> Engineer)
+// for a recruiter-friendly, no-date-noise summary. Full role-by-role
+// history with dates still lives in resume.pdf.
 const experience = [
   {
-    role: "[ADD REAL ROLE]",
-    company: "[ADD REAL COMPANY]",
-    dates: "[ADD REAL DATES]",
+    role: "Security Engineer",
+    company: "Boeing Employee Credit Union",
     bullets: [
-      "Replace this with a real responsibility or achievement.",
-      "Replace this with a real responsibility or achievement."
+      "Remediated 2.1 million+ exposed sensitive files using Varonis automation, reducing overall data exposure by 85.5%.",
+      "Administered Azure AD for 5,000+ users, managing RBAC, PIM, conditional access, and identity protection policies.",
+      "Managed and secured 500+ Azure resources, including VMs, storage accounts, networking, and security configurations.",
+      "Deployed Microsoft Defender for Cloud Apps (MDCA) and Microsoft Purview DLP policies to block unauthorized AI tools and prevent data exfiltration.",
+      "Increased log analysis efficiency by 60% using KQL queries, Azure Monitor, and Log Analytics for threat hunting.",
+      "Improved compliance posture by 30% by implementing Microsoft Purview, Azure Policy, and security baselines.",
+      "Reduced VM vulnerabilities by 50% by enforcing Defender for Servers, patch management, and security hardening best practices."
     ]
   }
 ];
@@ -108,7 +116,6 @@ function populateExperience() {
     card.innerHTML = `
       <div class="experience-header">
         <h3 class="experience-role">${job.role}</h3>
-        <span class="experience-dates">${job.dates}</span>
       </div>
       <div class="experience-company">${job.company}</div>
       <ul class="experience-bullets">${bullets}</ul>
@@ -118,22 +125,36 @@ function populateExperience() {
   });
 }
 
-// Skills / certifications / education data (real — sourced from blogs/aboutme.html)
+// Skills / certifications / education data (sourced from resume.pdf)
 const education = [
-  { degree: "Bachelor of Science, Cybersecurity and Information Assurance", school: "Western Governors University" },
-  { degree: "Associate of Science, Programming and IT Support", school: "Seattle Central College" }
+  { degree: "B.S., Cybersecurity and Information Assurance", school: "Western Governors University" },
+  { degree: "A.S., Programming and IT Support", school: "Seattle Central College" },
+  { degree: "Certificate in Computer Network Support", school: "Year Up / Seattle Central College" }
 ];
 
 const certifications = [
   "Microsoft Certified: Azure Security Engineer Associate (AZ-500)",
-  "CCNA (in progress)",
+  "Microsoft Certified: Azure Fundamentals (AZ-900)",
   "Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)",
-  "CompTIA A+",
+  "CCNA",
   "CompTIA Security+",
-  "CompTIA Network+"
+  "CompTIA Network+",
+  "CompTIA A+",
+  "Oracle Cloud Foundations Associate"
 ];
 
-const coreSkills = ["Azure", "Security", "Python", "Linux", "AI & Machine Learning"];
+const additionalTraining = [
+  "Rapid Ascent Cybersecurity Certificate",
+  "Google: Automate Cybersecurity Tasks with Python"
+];
+
+const coreSkills = [
+  "Varonis", "Microsoft Purview", "Defender for Cloud Apps", "Microsoft Sentinel",
+  "Azure Security", "Azure AD", "RBAC & PIM", "Zero Trust Architecture",
+  "Kubernetes", "Docker", "Terraform", "CSPM",
+  "Incident Response", "Threat Hunting", "SIEM", "KQL",
+  "PowerShell", "Python", "Linux/Bash", "Active Directory"
+];
 
 function populateCertifications() {
   const container = document.getElementById('certifications-container');
@@ -144,6 +165,8 @@ function populateCertifications() {
   ).join('');
 
   const certList = certifications.map(c => `<li>${c}</li>`).join('');
+
+  const trainingList = additionalTraining.map(t => `<li>${t}</li>`).join('');
 
   const skillTags = coreSkills.map(skill => `<span class="tag">${skill}</span>`).join('');
 
@@ -157,8 +180,12 @@ function populateCertifications() {
       <ul class="cert-list">${certList}</ul>
     </div>
     <div class="cert-group">
+      <strong style="color: var(--accent-secondary);">Additional Training:</strong>
+      <ul class="cert-list">${trainingList}</ul>
+    </div>
+    <div class="cert-group">
       <strong style="color: var(--accent-secondary); margin-right: 0.5rem;">Core Skills:</strong>
-      <div class="project-tags" style="display: inline-flex; margin-top: 0.5rem;">${skillTags}</div>
+      <div class="project-tags" style="display: inline-flex; flex-wrap: wrap; margin-top: 0.5rem;">${skillTags}</div>
     </div>
   `;
 }
