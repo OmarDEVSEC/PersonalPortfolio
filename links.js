@@ -17,7 +17,6 @@ const blogs = [
 ];
 
 // Social links data
-// TODO: replace mailto sentinel with a real email address before shipping.
 const socials = [
   {
     icon: "ri-github-fill",
@@ -35,7 +34,7 @@ const socials = [
   {
     icon: "ri-mail-line",
     name: "Email",
-    url: "mailto:REPLACE_WITH_REAL_EMAIL@example.com"
+    url: "mailto:Omarsecure30@gmail.com"
   }
 ];
 
