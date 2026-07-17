@@ -1,7 +1,7 @@
 //the typing animation JS code, adjust speed and words displayed-->
 
 const typed = new Typed(".auto-type",{
-    strings: ["a Cybersecurity Admin","a Programmer"],
+    strings: ["Cybersecurity Engineer","a Programmer"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
