@@ -92,9 +92,9 @@ const experience = [
     role: "Security Engineer",
     company: "Boeing Employee Credit Union",
     bullets: [
-      "Remediated 2.1 million+ exposed sensitive files using Varonis automation, reducing overall data exposure by 85.5%.",
+      "Remediated 2.1 million+ exposed sensitive files using Varonis automation, reducing sensitive data exposure by 85.5%.",
       "Administered Azure AD for 5,000+ users, managing RBAC, PIM, conditional access, and identity protection policies.",
-      "Managed and secured 500+ Azure resources, including VMs, storage accounts, networking, and security configurations.",
+      "Secured 500+ Azure resources, including VMs, storage accounts, networking, and security configurations.",
       "Deployed Microsoft Defender for Cloud Apps (MDCA) and Microsoft Purview DLP policies to block unauthorized AI tools and prevent data exfiltration.",
       "Increased log analysis efficiency by 60% using KQL queries, Azure Monitor, and Log Analytics for threat hunting.",
       "Improved compliance posture by 30% by implementing Microsoft Purview, Azure Policy, and security baselines.",
