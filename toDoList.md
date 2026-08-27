@@ -3,4 +3,9 @@
 1. Blog page CSS needs to have the same design as the main page and corresponding pages.
 2. Finish up the main section and host on a free teir subsription or figure out own way to secure and host your site.
 3. Add under construction message when user wants to visit my blog site, as it needs refinement.
+4. Update the hostname of the azure static web app
+5. Complete AZ-500 blog post
+6. Create WGU blog post for personal portfolio
+7. Start personal project
+
 

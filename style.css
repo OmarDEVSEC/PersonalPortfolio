@@ -66,6 +66,22 @@ a:hover {
     font-size: var(--font-size-base);
 }
 
+.header-content--with-photo {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-primary);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.15);
+    flex-shrink: 0;
+}
+
 .prompt {
     color: var(--accent-secondary);
     font-weight: 500;
@@ -393,6 +409,17 @@ a:hover {
 
     .header {
         padding: 2rem 0 1.5rem 0;
+    }
+
+    .header-content--with-photo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .profile-photo {
+        width: 80px;
+        height: 80px;
     }
 
     .header-cta {
