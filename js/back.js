@@ -13,12 +13,12 @@ const typed = new Typed(".auto-type",{
 // live demo — the "View" link only renders when demoUrl is set.
 const projects = [
   {
-    title: "[ADD REAL PROJECT] Project 1",
-    desc: "A brief description of your first project and its key features.",
-    languages: ["JavaScript", "React", "Node.js"],
-    frameworks: ["Express", "MongoDB"],
+    title: "Azure Security Infrastructure",
+    desc: "End-to-end Azure security infrastructure managed as code with Terraform — subscription-wide budget alerts, service health monitoring, and Defender for Cloud + KQL detection. Includes safely importing a live Static Web App into Terraform management without disrupting its GitHub Actions pipeline.",
+    languages: ["Terraform", "Bash"],
+    frameworks: ["Azure", "Defender for Cloud", "KQL"],
     demoUrl: "",
-    repoUrl: ""
+    repoUrl: "https://github.com/OmarDEVSEC/azure-security"
   },
   {
     title: "[ADD REAL PROJECT] Project 2",
